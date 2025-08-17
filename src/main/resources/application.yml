@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-ai-text-to-speech-elevenlabs-streaming-response
+
+  # AI configurations
+  ai:
+    elevenlabs:
+      api-key: ${ELEVENLABS_API_KEY}
+      tts:
+        enableLogging: true
+        options:
+          model-id: eleven_multilingual_v2
+          output-format: mp3
+
+
+# (Optional) For detailed request/response logging
+logging:
+  level:
+    org.zalando.logbook.Logbook: TRACE
